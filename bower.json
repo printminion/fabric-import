@@ -1,0 +1,29 @@
+{
+  "name": "fabric-import",
+  "version": "1.0.6",
+  "authors": [
+    "Misha M.-Kupriyanov <m.kupriyanov@gmail.com>"
+  ],
+  "private": true,
+  "description": "Element providing solution for utilising fabricjs canvas element",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "fabric-import.html",
+  "license": "MIT",
+  "homepage": "https://github.com/printminion/fabric-import/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "fabric": "~1.5.*"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^3.4.0"
+  }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>fabric-import Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="../fabric-import.html">
+  </head>
+  <body unresolved>
+
+    <p>An example of <code>&lt;fabric-import&gt;</code>:</p>
+
+    <p>Make words! <button id="saybtn">Say Something</button></p>
+
+    <fabric-import></fabric-import>
+
+    <script>
+      var seedElement = document.querySelector('fabric-import');
+
+      document.querySelector('#saybtn').addEventListener('click', function() {
+        alert(seedElement.sayHello('Hallo!'));
+      });
+
+
+      document.addEventListener("fabric-import-lasers", function(e) {
+        console.log(e.detail.sound);
+      });
+
+    </script>
+
+  </body>
+</html>
