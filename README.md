@@ -1,6 +1,6 @@
 # fabric-import
 
-An element providing a starting point for your own reusable Polymer elements.
+Element providing solution for including fabricjs library.
 
 
 ## Dependencies

@@ -1,11 +1,11 @@
 {
   "name": "fabric-import",
-  "version": "1.0.6",
+  "version": "1.5.0",
   "authors": [
     "Misha M.-Kupriyanov <m.kupriyanov@gmail.com>"
   ],
   "private": true,
-  "description": "Element providing solution for utilising fabricjs canvas element",
+  "description": "Element providing solution for including fabricjs library",
   "keywords": [
     "web-component",
     "polymer",

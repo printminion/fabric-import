@@ -15,9 +15,7 @@
     <!-- You can use the document as a place to set up your fixtures. -->
     <test-fixture id="fabric-import-fixture">
       <template>
-        <fabric-import>
-          <h2>fabric-import</h2>
-        </fabric-import>
+        <fabric-import></fabric-import>
       </template>
     </test-fixture>
 
@@ -30,30 +28,12 @@
           myEl = fixture('fabric-import-fixture');
         });
 
-        test('defines the "author" property', function() {
-          assert.equal(myEl.author.name, 'Dimitri Glazkov');
-          assert.equal(myEl.author.image, 'http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+        test('fabricjs is loaded', function() {
+          expect(fabric).to.be.an('object');
         });
 
-        test('says hello', function() {
-          assert.equal(myEl.sayHello(), 'fabric-import says, Hello World!');
-
-          var greetings = myEl.sayHello('greetings Earthlings');
-          assert.equal(greetings, 'fabric-import says, greetings Earthlings');
-        });
-
-        test('fires lasers', function(done) {
-          myEl.addEventListener('fabric-import-lasers', function(event) {
-            assert.equal(event.detail.sound, 'Pew pew!');
-            done();
-          });
-          myEl.fireLasers();
-        });
-
-        test('distributed children', function() {
-          var els = myEl.getContentChildren();
-          assert.equal(els.length, 1, 'one distributed node');
-          assert.equal(els[0], myEl.querySelector('h2'), 'content distributed correctly');
+        test('fabric version is 1.5.0', function() {
+          expect(fabric.version).to.be.equal('1.5.0');
         });
 
       });
