@@ -1,5 +1,7 @@
 # fabric-import
 
+[![Build Status](https://travis-ci.org/printminion/fabric-import.svg?branch=master)](https://travis-ci.org/printminion/fabric-import)
+
 Element providing solution for including fabricjs library.
 
 
