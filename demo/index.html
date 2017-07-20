@@ -1,32 +1,33 @@
 <!doctype html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <title>fabric-import Demo</title>
-    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>fabric-import demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../fabric-import.html">
-</head>
-<body unresolved>
 
-<style>
-    #canvas {
-        width: 300px;
-        height: 300px;
-        border: 1px dotted #ff0000;
-        background: gray;
-    }
-</style>
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic fabric-import demo</h3>
+      <demo-snippet>
+        <template>
+	<p>
+	    <button id="dotestbtn">Test Fabric JS</button>
+	</p>
+          <fabric-import></fabric-import>
+	  <canvas id="canvas" width="300" height="300"></canvas>
 
-<p>An example of <code>&lt;fabric-import&gt;</code>:</p>
-
-<p>
-    <button id="dotestbtn">Test Fabric JS</button>
-</p>
-
-<fabric-import></fabric-import>
-
-<canvas id="canvas" width="300" height="300"></canvas>
 
 <script>
     var seedElement = document.querySelector('fabric-import');
@@ -91,5 +92,8 @@
     }
 </script>
 
-</body>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
 </html>
